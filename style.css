@@ -16,10 +16,11 @@ body{
 
 /* Parte superior */
 #aba-superior{
+    position: fixed;
+    top: 0;
     display: flex;
     width: 100%;
-    border: solid 1px red;
-    padding: 20px 150px;
+    padding: 20px 110px;
 }
 
 .titulo {
@@ -27,13 +28,11 @@ body{
     font-style: normal;
     font-size: 55px;
     display: inline-flex;
-    border: solid 1px red;
     margin-right: auto;
     color: #323232;
 }
 
 #botoes-superiores{
-    border: solid 1px red;
     display: inline-flex;
     margin-left: auto;
     gap: 60px;
@@ -44,7 +43,7 @@ body{
     font-family:'Courier New', Courier, monospace;
     color: #FCF8EF;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #agendamentos{
@@ -54,6 +53,7 @@ body{
 }
 /*  */
 
+/* Imagens */
 #background-direita{
     position: absolute;      
     top: 0;
@@ -62,10 +62,51 @@ body{
     height: 100vh;        
     background-image: url("placeholders/group9.png");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: 30px;
     background-size: cover;
 
     z-index: -1;          
     pointer-events: none; 
 }
+
+#img-central{
+    margin: auto;
+    margin-top: 260px;
+
+}
+
+#img-central img{
+    width: 350px;
+}
+
+#img-esquerda{
+    position: absolute;      
+    top: 25%;
+    left: 10%;
+    width: 300px;          
+    height: 300px;        
+    background-image: url("placeholders/esquerda.png");
+    background-repeat: no-repeat;
+    background-position: 30px;
+    background-size: cover;
+
+    z-index: -1;          
+    pointer-events: none; 
+}
+
+/*  */
+
+/* barra */
+
+#barra-baixa{
+    width: 100vw;
+    height: 170px;
+    border: solid 1px red;
+    background-color: #D8B192;
+    position: absolute;
+    z-index: -2;  
+}
+
+/*  */
+
 
