@@ -11,8 +11,10 @@ body{
 #container{
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
+/* Parte superior */
 #aba-superior{
     display: flex;
     width: 100%;
@@ -39,13 +41,31 @@ body{
 }
 
 #botoes-superiores a{
-    font-family: Helvetica;
-    color: #323232;
+    font-family:'Courier New', Courier, monospace;
+    color: #FCF8EF;
     text-decoration: none;
+    font-size: 18px;
 }
 
 #agendamentos{
-    border: solid 1px #323232;
+    border: solid 1px #FCF8EF;
     padding: 15px;
     border-radius: 55px;
 }
+/*  */
+
+#background-direita{
+    position: absolute;      
+    top: 0;
+    right: 0;
+    width: 50vw;          
+    height: 100vh;        
+    background-image: url("placeholders/group9.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+
+    z-index: -1;          
+    pointer-events: none; 
+}
+
