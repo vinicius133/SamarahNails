@@ -20,6 +20,7 @@ body{
 
 #fundo-direita img{
     height: 100vh;
+    width: auto;
     left: 0;
     display: block;
 }
@@ -72,6 +73,20 @@ body{
     border: solid 1px #FCF8EF;
     padding: 15px;
     border-radius: 55px;
+    transition: .2s;
+}
+
+#agendamentos:hover{
+    color: #323232;
+    border: 1px solid #323232;
+    background-color: #FCF8EF;
+}
+
+#instagram:hover{
+    border: solid 1px #FCF8EF;
+    padding: 15px;
+    border-radius: 55px;
+    transition: .2s;
 }
 
 /*  BARRA INFERIOR //////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -87,19 +102,29 @@ body{
 }
 
 #botao-principal{
+    display: inline-block;
     margin-top: 28vh;
     border: solid 1px #323232;
     padding: 15px 35px;
     border-radius: 55px;
     background-color: #FCF8EF;
-}
 
-#botao-principal a{
     font-family:'Courier New', Courier, monospace;
     color: #323232;
     text-decoration: none;
     font-size: 28px;
+
+    transition: .2s;
 }
+
+
+
+#botao-principal:hover{
+    border: solid 1px #FCF8EF;
+    background-color: #323232;
+    color: #FCF8EF;
+}
+
 
 /* ESQUERDA /////////////////////////////////////////////////////// */
 #esquerda{
@@ -107,8 +132,75 @@ body{
     position: absolute;
     display: block;
     text-align: center;
-    border: 1px solid blue;
     width: 55%;
     height: 100vh;
     padding: 0 200px;
+    z-index: -1;
+}
+
+
+/* VIEWPORTS DIFERENTES ////////////////////////////////////////////////////////// */
+@media (max-width: 1367px){
+
+    #botao-principal{
+        margin-top: 15vh;
+    }
+
+    #aba-superior{
+        padding: 10px 110px;
+    }
+}
+
+@media (max-width: 1026px){
+
+    #fundo-direita img{
+        height: 100vh;
+        width: 55vw;
+    }
+
+    #aba-superior{
+        padding: 10px 50px;
+    }
+
+    #fundo-esquerda img{
+        width: 250px;
+    }
+
+    #botao-principal{
+        margin-top: 29vh;
+        font-size: 22px;
+    }
+
+    #esquerda{
+        padding: 0 100px;
+    }
+    
+}
+
+
+@media (max-width: 770px){
+
+    #fundo-direita img{
+        height: 100vh;
+        width: auto;
+    }
+
+    #aba-superior{
+        font-size: 10px;
+        padding: 10px 50px;
+    }
+
+    #fundo-esquerda img{
+        width: 250px;
+    }
+
+    #botao-principal{
+        margin-top: 29vh;
+        font-size: 22px;
+    }
+
+    #esquerda{
+        padding: 0 100px;
+    }
+    
 }
