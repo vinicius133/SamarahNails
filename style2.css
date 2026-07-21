@@ -180,27 +180,99 @@ body{
 
 @media (max-width: 770px){
 
+    #container-atras{
+        z-index: -3;
+    }
+
     #fundo-direita img{
-        height: 100vh;
-        width: auto;
+        height: 90vh;
+        width: 55vw;
+    }
+
+    #botoes-superiores a{
+        font-size: 15px;
     }
 
     #aba-superior{
-        font-size: 10px;
-        padding: 10px 50px;
+        padding: 10px 40px;
+    }
+
+    .titulo{
+        font-size: 40px;
     }
 
     #fundo-esquerda img{
-        width: 250px;
+        width: 200px;
     }
 
     #botao-principal{
-        margin-top: 29vh;
+        margin-top: 40vh;
+        width: 300px;
         font-size: 22px;
     }
 
     #esquerda{
-        padding: 0 100px;
+        padding: 0 73px;
+    }
+
+    #barra-inferior{
+        height: 110px;
     }
     
+}
+
+
+@media (max-width: 430px){
+
+    #aba-superior{
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .titulo{
+        font-size: 28px;
+        text-align: center;
+        line-height: 1;
+    }
+
+    #botoes-superiores{
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #botoes-superiores a{
+        font-size: 14px;
+    }
+
+    #agendamentos,
+    #instagram{
+        padding: 10px 14px;
+    }
+
+    #fundo-esquerda{
+        margin-top: 150px;
+    }
+
+    #fundo-esquerda img{
+        width: 170px;
+    }
+
+    #esquerda{
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #botao-principal{
+        width: 100%;
+        max-width: 300px;
+        margin-top: 60px;
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    #barra-inferior{
+        height: 90px;
+    }
+
 }
