@@ -5,13 +5,15 @@
 }
 
 body{
-    background-color: #EFCEC9;
+    background-color: #FCF8EF;;
+    height: 9999px;
 }
 
+/* ABA SUPERIOR ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .aba-superior{
     display: flex;
-    border: 1px solid red;
-    padding: 5px 30px;
+    
+    padding: 20px 100px;
     align-items: center;
 }
 
@@ -41,4 +43,199 @@ body{
     display: flex;
     margin-right: auto;
     gap: 30px;
+}
+
+/* CONTEÚDO PRINCIPAL //////////////////////////////////////////////////////////////////////////// */
+
+.esquerda-principal{
+    display: inline-block;
+    margin-top: 100px;
+    width: 55vw;
+    padding-left: 90px;
+
+}
+
+.texto-cima{
+    font-size: 30px;
+    color: #F08FB0;
+    margin-bottom: 27px;
+}
+
+.texto-meio{
+    font-family: "Cinzel", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 27px;
+    font-size: 75px;
+    color: #323232;
+}
+
+.texto-baixo{
+    font-family: 'Gill Sans MT', sans-serif;
+    font-size: 20px;
+    color: #323232;
+    margin-bottom: 60px;
+}
+
+/* Direita //////////////////////////////////////////////// */
+
+.direita-principal{
+    display: inline-flex;
+    position: absolute;
+
+    margin-bottom: -60px;
+    bottom: 0;
+    right: 0;
+
+    border: 20px solid white;
+    border-right: 0;
+}
+
+.direita-principal img{
+    width: 500px;
+}
+
+
+/* BOTAO PRINCIPAL ////////////////////////////////////////// */
+.botao-principal{
+    font-size: 20px;
+    font-family: 'Gill Sans MT', sans-serif;
+    text-decoration: none;
+    color: #FCF8EF;
+    border: 1px solid #911439;
+    background-color: #911439;
+    padding: 17px 20px;
+}
+
+/* FUNDO ROSA /////////////////////////////////////////////// */
+.fundo-rosa{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    height: 100vh;
+
+    background-color: #EFCEC9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COMPATIBILIDADE COM DIFERENTES VIEWPORTS*/
+
+@media (min-width: 2000px) {
+    
+    .esquerda-principal{
+        margin-top: 1000px;
+        width: 55vw;
+        padding-left: 200px;
+
+    }
+
+    .texto-cima{
+        font-size: 100px;
+        color: #F08FB0;
+        margin-bottom: 100px;
+    }
+
+    .texto-meio{
+        font-family: "Cinzel", cursive;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 100px;
+        font-size: 200px;
+        color: #323232;
+    }
+
+    .texto-baixo{
+        font-family: 'Gill Sans MT', sans-serif;
+        font-size: 80px;
+        color: #323232;
+        margin-bottom: 150px;
+    }
+
+
+
+
+    .botao-principal{
+        font-size: 80px;
+        font-family: 'Gill Sans MT', sans-serif;
+        text-decoration: none;
+        color: #FCF8EF;
+        border: 1px solid #911439;
+        background-color: #911439;
+        padding: 25px 90px;
+    }
+
+
+
+
+
+
+    .direita-principal{
+        margin-bottom: -100px;
+    }
+
+    .direita-principal img{
+        width: 1500px;
+    }
+
+    .contatos{
+        gap: 150px;
+    }
+
+    .contatos a img{
+        width: 100px;
+    }
+
+    .aba-superior img{
+        width: 400px;
+    }
+
+    .aba-superior p{
+        font-size: 150px;
+    }
+
+    .titulo{
+        gap: 150px;
+    }
+}
+
+
+@media (max-width: 1290px){
+    .esquerda-principal{
+        margin-top: 50px;
+        padding-left: 50px;
+
+    }
+
+    .texto-cima{
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .texto-meio{
+        margin-bottom: 25px;
+        font-size: 50px;
+    }
+
+    .texto-baixo{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .direita-principal img{
+        width: 350px;
+    }
 }
