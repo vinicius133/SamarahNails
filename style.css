@@ -5,25 +5,21 @@
 }
 
 body{
-    background-color: #FCF8EF;
+    background-color: #EFCEC9;
 }
 
-#container{
+.aba-superior{
     display: flex;
-    width: 100%;
-    flex-direction: column;
+    border: 1px solid red;
+    padding: 5px 30px;
+    align-items: center;
 }
 
-/* Parte superior */
-#aba-superior{
-    position: fixed;
-    top: 0;
-    display: flex;
-    width: 100%;
-    padding: 20px 110px;
+.aba-superior img{
+    width: 100px;
 }
 
-.titulo {
+.aba-superior p{
     font-family: "Fleur De Leah", cursive;
     font-style: normal;
     font-size: 55px;
@@ -32,81 +28,17 @@ body{
     color: #323232;
 }
 
-#botoes-superiores{
-    display: inline-flex;
-    margin-left: auto;
-    gap: 60px;
-    align-items: center;
+.contatos{
+    display: flex;
+    gap: 30px;
 }
 
-#botoes-superiores a{
-    font-family:'Courier New', Courier, monospace;
-    color: #FCF8EF;
-    text-decoration: none;
-    font-size: 20px;
+.contatos a img{
+    width: 35px;
 }
 
-#agendamentos{
-    border: solid 1px #FCF8EF;
-    padding: 15px;
-    border-radius: 55px;
+.titulo{
+    display: flex;
+    margin-right: auto;
+    gap: 30px;
 }
-/*  */
-
-/* Imagens */
-#background-direita{
-    position: absolute;      
-    top: 0;
-    right: 0;
-    width: 50vw;          
-    height: 100vh;        
-    background-image: url("assets/1.jpeg");
-    background-repeat: no-repeat;
-    background-position: 30px;
-    background-size: cover;
-
-    z-index: -1;          
-    pointer-events: none; 
-}
-
-#img-central{
-    margin: auto;
-    margin-top: 260px;
-
-}
-
-#img-central img{
-    width: 350px;
-}
-
-#img-esquerda{
-    position: absolute;      
-    top: 25%;
-    left: 10%;
-    width: 300px;          
-    height: 300px;        
-    background-image: url("placeholders/esquerda.png");
-    background-repeat: no-repeat;
-    background-position: 30px;
-    background-size: cover;
-
-    z-index: -1;          
-    pointer-events: none; 
-}
-
-/*  */
-
-/* barra */
-
-#barra-baixa{
-    width: 100vw;
-    height: 170px;
-    border: solid 1px red;
-    background-color: #D8B192;
-    position: absolute;
-    z-index: -2;  
-}
-
-/*  */
-
-
