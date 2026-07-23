@@ -443,7 +443,7 @@ hr{
 
 
 
-@media (max-width: 630px) {  /* 430px */
+@media (max-width: 630px) { 
     .esquerda-principal{
         margin-top: 20px;
     }
@@ -459,6 +459,7 @@ hr{
 
     .box-inferior{
         gap: 5px;
+        top: 130vh;
     }
 
     .box-inferior img{
@@ -467,6 +468,7 @@ hr{
     }
 
     .box-inferior-title{
+        top: 120%;
         margin-top: 20px;
     }
 
