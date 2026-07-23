@@ -451,8 +451,8 @@ hr{
 /* CONTEUDO PRINCIPAL ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
 
     .direita-principal img{
-        width: 200px;
-        height: 300px;
+        width: 150px;
+        height: 200px;
     }
 
     /* BOX INFERIOR //////////////////////////////////////// */
@@ -467,7 +467,7 @@ hr{
     }
 
     .box-inferior-title{
-        margin-top: 45px;
+        margin-top: 20px;
     }
 
     .rodape{
