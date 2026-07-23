@@ -5,8 +5,7 @@
 }
 
 body{
-    background-color: #FCF8EF;;
-    height: 9999px;
+    background-color: #FCF8EF;
 }
 
 /* ABA SUPERIOR ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -59,6 +58,7 @@ body{
     font-size: 30px;
     color: #F08FB0;
     margin-bottom: 27px;
+    font-weight: 600;
 }
 
 .texto-meio{
@@ -75,6 +75,7 @@ body{
     font-size: 20px;
     color: #323232;
     margin-bottom: 60px;
+
 }
 
 /* Direita //////////////////////////////////////////////// */
@@ -91,6 +92,7 @@ body{
 
     border: 20px solid white;
     border-right: 0;
+    
 }
 
 .direita-principal img{
@@ -107,6 +109,7 @@ body{
     border: 1px solid #911439;
     background-color: #911439;
     padding: 17px 20px;
+
 }
 
 /* FUNDO ROSA /////////////////////////////////////////////// */
@@ -122,8 +125,59 @@ body{
     background-color: #EFCEC9;
 }
 
+/* BOX INFERIOR ////////////////////////////////////////////////////////////////////////////////////////////////// */
+.box-inferior-title{
+    position: absolute;
+    left: 50%;
+    top: 105%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #F08FB0;
 
+    text-align: center;
 
+    font-weight: 600;
+
+}
+
+.box-inferior{
+    position: absolute;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+    display: flex;
+    text-align: center;
+
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.box-inferior img{
+    width: 400px;
+    border: 20px solid white;
+}
+/* RODAPÉ ///////////////////////////////////////////////////////////////////////////////////// */
+
+.rodape{
+    text-align: center;
+    margin-top: 98vh;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+hr{
+    height: 1px;
+    background-color: #323232;
+    margin: auto;
+    width: 60vw;
+    margin-bottom: 15px;
+}
+
+.rodape img{
+    width: 35px;
+    margin: 15px 18px;
+}
 
 
 
@@ -214,6 +268,12 @@ body{
     }
 }
 
+@media (max-width: 1670px){
+    .esquerda-principal{
+        margin-top: 25px;
+    }
+}
+
 
 @media (max-width: 1370px){
     .esquerda-principal{
@@ -251,6 +311,28 @@ body{
         align-items: center;
     }
 
+    .rodape{
+        margin-top: 140vh;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .esquerda-principal{
+        margin-top: 10px;
+    }
+
+    .texto-meio{
+        font-size: 40px;
+    }
+
+    .texto-baixo{
+        font-size: 15px;
+    }
+
+    .box-inferior img{
+        width: 300px;
+    }
 }
 
 
@@ -258,7 +340,7 @@ body{
 
 
 /* COMPATIBILIDADE MOBILE */
-@media (max-width: 727px) {
+@media (max-width: 780px) {
 
 /* SUPERIOR ///////////////////////////////////////////////////////// */
     .aba-superior{
@@ -269,11 +351,6 @@ body{
 
     .aba-superior p{
         font-size: 30px;
-    }
-
-    .aba-superior img{
-        width: 50px;
-        height: 100%
     }
 
     .titulo{
@@ -295,7 +372,7 @@ body{
     .esquerda-principal{
         width: 55vw;
         padding-left: 25px;
-
+        margin-top: 150px;
     }
 
     .texto-cima{
@@ -313,9 +390,6 @@ body{
         margin-bottom: 40px;
     }
 
-
-
-
     .botao-principal{
         font-size: 15px;
         color: #FCF8EF;
@@ -325,17 +399,86 @@ body{
     }
 
 
+    .direita-principal img{
+        width: 300px;
+        height: 400px;
+    } 
 
 
+    /* BOX INFERIOR //////////////////////////////////////// */
+    .box-inferior{
+        gap: 10px;
 
-
-    .direita-principal{
-        margin-bottom: -15px;
     }
+
+    .box-inferior img{
+        width: 200px;
+        border: 10px solid white;
+    }
+
+    .box-inferior-title{
+        font-size: 25px;
+    }
+
+
+
+    .rodape{
+        font-size: 12px;
+        font-weight: 600;
+        margin-top: 120vh ;
+    }
+
+    hr{
+        margin: auto; 
+        width: 60vw;
+        margin-bottom: 15px;
+    }
+
+    .rodape img{
+        width: 25px;
+        margin: 5px 15px;
+    }
+
+}
+
+
+
+@media (max-width: 430px) {
+    .esquerda-principal{
+        margin-top: 20px;
+    }
+
+/* CONTEUDO PRINCIPAL ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; */
 
     .direita-principal img{
         width: 200px;
         height: 300px;
-    } 
+    }
 
+    /* BOX INFERIOR //////////////////////////////////////// */
+
+    .box-inferior{
+        gap: 5px;
+    }
+
+    .box-inferior img{
+        width: 115px;
+        border: 5px solid white;
+    }
+
+    .box-inferior-title{
+        margin-top: 45px;
+    }
+
+    .rodape{
+        margin-top: 110vh;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .box-inferior img{
+        width: 100px;
+        border: 5px solid white;
+    }
 }
